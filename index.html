@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Space Gallery</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1 style="text-align:center;">Space Gallery 🌌</h1>
+
+<div class="filter-buttons">
+  <button data-filter="all">All</button>
+  <button data-filter="earth">Earth</button>
+  <button data-filter="moon">Moon</button>
+  <button data-filter="galaxy">Galaxy</button>
+  <button data-filter="astronaut">Astronaut</button>
+</div>
+
+<div class="gallery">
+  <!-- Earth (6) -->
+  <div class="image-container" data-category="earth"><img src="img1.jpg" alt="Earth 1"></div>
+  <div class="image-container" data-category="earth"><img src="img2.jpg" alt="Earth 2"></div>
+  <div class="image-container" data-category="earth"><img src="img3.jpg" alt="Earth 3"></div>
+  <div class="image-container" data-category="earth"><img src="img4.jpg" alt="Earth 4"></div>
+  <div class="image-container" data-category="earth"><img src="img5.jpg" alt="Earth 5"></div>
+  <div class="image-container" data-category="earth"><img src="img6.jpg" alt="Earth 6"></div>
+
+  <!-- Moon (1) -->
+  <div class="image-container" data-category="moon"><img src="img7.jpg" alt="Moon 1"></div>
+
+  <!-- Galaxy (3) -->
+  <div class="image-container" data-category="galaxy"><img src="img8.jpg" alt="Galaxy 1"></div>
+  <div class="image-container" data-category="galaxy"><img src="img9.jpg" alt="Galaxy 2"></div>
+  <div class="image-container" data-category="galaxy"><img src="img10.jpg" alt="Galaxy 3"></div>
+
+  <!-- Astronaut (2) -->
+  <div class="image-container" data-category="astronaut"><img src="img11.jpg" alt="Astronaut 1"></div>
+  <div class="image-container" data-category="astronaut"><img src="img12.jpg" alt="Astronaut 2"></div>
+</div>
+
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox">
+  <span class="close">&times;</span>
+  <img class="lightbox-img" src="">
+  <div class="navigation">
+    <button id="prev">Prev</button>
+    <button id="next">Next</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
